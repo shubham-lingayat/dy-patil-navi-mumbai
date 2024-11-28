@@ -5,81 +5,80 @@ function Navbar() {
   const url = process.env.REACT_APP_URL || "#";
   return (
     <header>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
-          <a className="navbar-brand" href={url}>
-            <img className="mainLogo" src="/images/logo.png" alt="not found" />
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#home">
+      <div className="container-fluid h_nav sticky-top">
+        <div className="container px-0">
+          <nav className="navbar navbar-expand-lg  navbar-light p-lg-0">
+            <a href={url} className="navbar-brand">
+              <img
+                src={`${url}images/logo/3.png`}
+                className="hero_logo_01"
+                loading="lazy"
+                alt="img not found"
+              />
+              <img
+                src={`${url}images/logo/naac.png`}
+                className="hero_logo_02"
+                loading="lazy"
+                alt="img not found"
+              />
+            </a>
+            <a
+              href="#none"
+              className="btn c_btn fw-normal btn_font d-lg-none"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Enquire Now
+            </a>
+            <button
+              type="button"
+              className="navbar-toggler me-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div
+              className="collapse navbar-collapse justify-content-center align-items-center"
+              id="navbarCollapse"
+            >
+              <div className="navbar-nav">
+                <a href={url} className="nav-item nav-link active">
                   Home
                 </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="#about"
-                >
-                  About DY Patil
+                <a href="#about-us" className="nav-item nav-link">
+                  About Us
                 </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="#programs"
-                >
+                <a href="#why-us" className="nav-item nav-link">
+                  Why Choose Us
+                </a>
+                <a href="#Program" className="nav-item nav-link">
                   Programs
                 </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="#admission"
-                >
+                <a href="#admission-process" className="nav-item nav-link">
                   Admission Process
                 </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="#getInspired"
-                >
-                  Get Inspired
+                <a href="#testimonials" className="nav-item nav-link d-none">
+                  Testimonials
                 </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="#placement"
-                >
+                <a href="#recruters" className="nav-item nav-link">
                   Placement
                 </a>
-              </li>
-              <li className="nav-item">
-                <button className="applyNowBtn">Apply Now</button>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </div>
+            <div className="d-lg-block d-none">
+              <a
+                href="#none"
+                className="btn c_btn py-2 px-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Enquire Now
+              </a>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
   );
 }

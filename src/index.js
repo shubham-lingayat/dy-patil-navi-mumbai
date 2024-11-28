@@ -4,8 +4,8 @@ import "./index.css";
 import App from "./App";
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
-// Bootstrap JS
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// Bootstrap JSnpm install @popperjs/core
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
