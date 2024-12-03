@@ -1,7 +1,19 @@
 import React from "react";
+import { useEffect } from "react";
 
 const WhyChooseUs = () => {
+  useEffect(() => {
+    const elements = document.querySelectorAll('[data-bgimg]');
+    elements.forEach((element) => {
+      const bgImage = element.getAttribute('data-bgimg');
+      if (bgImage) {
+        element.style.backgroundImage = `url(${bgImage})`;
+      }
+    });
+  }, []);
+
   const url = process.env.REACT_APP_URL || "#";
+
   return (
     <section>
       <div className="container" id="why-us">

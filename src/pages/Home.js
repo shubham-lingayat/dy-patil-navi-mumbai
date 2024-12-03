@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import AboutUs from "../components/AboutUs";
 import WhyChooseUs from "../components/WhyChooseUs";
+import Programs from "../components/Programs";
 
 const Home = () => {
   return (
@@ -44,6 +45,7 @@ const Home = () => {
 
       <AboutUs />
       <WhyChooseUs />
+      <Programs />
     </div>
   );
 };

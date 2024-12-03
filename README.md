@@ -21,3 +21,7 @@ npm install @popperjs/core
 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 npm list bootstrap
+npm install react-owl-carousel
+npm install --save owl.carousel
+
+npm install react-owl-carousel2
