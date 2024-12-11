@@ -1,10 +1,5 @@
 import React from "react";
 import Form from "./Form";
-// Owl Carousel
-// import $ from 'jquery';
-// import OwlCarousel from "react-owl-carousel";
-// import "owl.carousel/dist/assets/owl.carousel.css";
-// import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const AboutUs = () => {
   const url = process.env.REACT_APP_URL || "#";
@@ -17,17 +12,8 @@ const AboutUs = () => {
     "Programs in Diverse Fields",
   ];
   // For Logos
-  const logoName = ["NAAC", "UGC", "AICTE", "IIRF", "NIRF", "BCI", "AIU"];
-  // Owl Carosel
-  // const awards_01 = {
-  //   loop: true,
-  //   margin: 10,
-  //   nav: true,
-  //   dots: true,
-  //   autoplay: true,
-  //   autoplayTimeout: 3000,
-  //   items: 3, // Number of items visible
-  // };
+  const logoName = ["NAAC", "UGC", "AICTE", "IIRF"];
+  // const logoName = ["NAAC", "UGC", "AICTE", "IIRF", "NIRF", "BCI", "AIU"];
 
   return (
     <section className="">
@@ -36,11 +22,12 @@ const AboutUs = () => {
           <div className="col-lg-8">
             <div className="col-lg-12  text-lg-start text-center ">
               <h1 className="text-dark fw-normal mb-3 display-5">
-                About
+                About {}
                 <span className="text-red fw-bold">
-                  D. Y. Patil University,
+                  D. Y. Patil University, {}
                 </span>
-                Mumbai
+                <br />
+                Navi Mumbai
               </h1>
             </div>
             <p align="justify" className="pt-3">
@@ -71,25 +58,19 @@ const AboutUs = () => {
               </h2>
             </div>
             <div className="row awards_01 owl-carousel justify-content-center ">
-              {/*
-              <OwlCarousel className="owl-theme" {...awards_01}>
-                Map Function start
-                {logoName.map((value, index) => (
-                  <div className="col-lg-12 text-center mb-4 award_02">
-                    <div className=" py-3 me-3 border box_shadow">
-                      <img
-                        src={`${url}images/awards/${index + 1}.webp`}
-                        loading="lazy"
-                        className="img-fluid "
-                        alt="img not found"
-                      />
-                      <h6 className="content text-red pt-3">{value}</h6>
-                    </div>
+              {logoName.map((value, index) => (
+                <div className="col-lg-3 text-center mb-4 award_02">
+                  <div className=" py-3 me-3 border box_shadow">
+                    <img
+                      src={`${url}images/awards/${index + 1}.webp`}
+                      loading="lazy"
+                      className="img-fluid "
+                      alt="img not found"
+                    />
+                    <h6 className="content text-red pt-3">{value}</h6>
                   </div>
-                ))}
-                Map Function End 
-              </OwlCarousel>
-              */}
+                </div>
+              ))}
             </div>
           </div>
           <div className="col-lg-4 pb-3 pb-lg-0 d-none d-lg-grid">

@@ -260,3 +260,79 @@ const ug = {
     ],
   },
 };
+
+const pg = {
+  "Tab 15": {
+    course: "Master of Public Health",
+    id: "tab15",
+    targetId: "contentTab15",
+    imgSrc: "",
+    tabContent: [
+      {
+        heading1: "Master of",
+        heading2: "Public Health",
+        overview:
+          "The overall objective of this MPH programme is to train competent and skilled specialists who will aid in problem solving and critical thinking in the public health domain and effectively meet the public health needs of the country. student's opting for the programme gain skills in the public health sciences that prepares them for careers in a variety of settings, including academia; local, national, or international public health agencies; industry; and non-profit foundations and research organisations.",
+        eligibilityCriteria:
+          '<img class="points" src=`${url}images/programs/dot-circle.webp` alt="img not found">  Bachelor’s degree in Health Sciences / Professional degree in a health-related field. <br/><img class="points" src=`${url}images/programs/dot-circle.webp` alt="img not found">  Bachelor’s degree (Non-health Sciences) with proven experience in a health-related field.',
+        specialization: "",
+        duration:
+          "The programme commences in the first week of October every year. It is an 80 credits, 24-month full-time programme spread across 4 semesters.",
+      },
+    ],
+  },
+  "Tab 16": {
+    course: "Master of Public Policy",
+    id: "tab16",
+    targetId: "contentTab16",
+    imgSrc: "",
+    tabContent: [
+      {
+        heading1: "Master of ",
+        heading2: "Public Policy",
+        overview:
+          "Modern societies confront multifaceted policy challenges such as healthcare reform, climate change, inequality, technological innovation, and governance effectiveness. Addressing these demands require a skilled cadre of policy professionals who can navigate complex issues and balance diverse stakeholder interests. Governments, non-governmental organizations, international bodies, think tanks, and private sector entities require policy experts to tackle intricate problems. The demand extends to policy analysts, advisors, consultants, researchers, and government officials capable of evidence-based decision-making.",
+        eligibilityCriteria:
+          "The course is open to candidates with a Bachelor’s Degree from recognized universities in India or abroad.",
+        specialization: "",
+        duration:
+          "The Master of Public Policy program is a 24-month full-time program, offering 80 credits spread across 4 semesters. It commences in the first week of August every year.",
+      },
+    ],
+  },
+  "Tab 17": {
+    course: "LLM",
+    id: "tab17",
+    targetId: "contentTab17",
+    imgSrc: "",
+    tabContent: [
+      {
+        heading1: "LLM",
+        heading2: "",
+        overview: "NA",
+        eligibilityCriteria: "NA",
+        specialization: "",
+        duration: "NA",
+      },
+    ],
+  },
+  "Tab 18": {
+    course: "Master of Computer Applications (MCA)",
+    id: "tab18",
+    targetId: "contentTab18",
+    imgSrc: "",
+    tabContent: [
+      {
+        heading1: "Master of ",
+        heading2: "Computer Applications (MCA)",
+        overview:
+          "The Master of Computer Applications (MCA) is a postgraduate degree designed to provide student's with in-depth knowledge and practical expertise in computer science, software development, and information technology. The program typically spans two years. The MCA program is ideal for individuals who wish to pursue a career in the IT and software development industry, and it covers a wide range of topics including programming, algorithms, data structures, web development, database management, artificial intelligence, machine learning, and more.",
+        eligibilityCriteria:
+          '<img class="points" src=`${url}images/programs/dot-circle.webp` alt="img not found"> 50% in graduation in any discipline and 45% in case of Reserved Category. <br/><img class="points" src=`${url}images/programs/dot-circle.webp` alt="img not found">  MATHS as Compulsory subject at 10+2',
+        specialization: "",
+        duration:
+          "The MCA program is a 2-year course designed to equip student's with essential skills and knowledge in computer applications, with a major focus on programming, data management, and emerging technologies.",
+      },
+    ],
+  },
+};

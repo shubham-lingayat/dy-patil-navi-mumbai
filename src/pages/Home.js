@@ -45,7 +45,6 @@ const Home = () => {
 
       <AboutUs />
       <WhyChooseUs />
-      <Programs />
     </div>
   );
 };

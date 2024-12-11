@@ -125,11 +125,11 @@
 }
 
 body {
-  font-size: 14px;
-  font-family: var(--gotham);
-  color: var(--dark);
-  background-color: #f3f3f3;
-  font-display: swap;
+  font-size: 14px !important;
+  font-family: var(--gotham) !important;
+  color: var(--dark) !important;
+  background-color: #f3f3f3 !important;
+  font-display: swap !important;
 }
 
 h1,
